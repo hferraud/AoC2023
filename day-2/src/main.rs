@@ -31,12 +31,10 @@ fn main() {
         match part {
             1 => {
                 let key = get_part_one_key(cube_set, games);
-                println!("Key: {}", key);
                 break;
             }
             2 => {
                 let key = get_part_two_key(games);
-                println!("Key: {}", key);
                 break;
             }
             _ => {
@@ -44,6 +42,7 @@ fn main() {
             }
         }
     }
+    println!("Key: {}", key);
 }
 
 fn get_part_one_key(initial_set: CubeSet, games: HashMap<u32, Vec<CubeSet>>) -> u32 {
